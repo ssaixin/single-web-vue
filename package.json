@@ -1,0 +1,23 @@
+{
+  "name": "single-web",
+  "version": "1.0.0",
+  "description": "用来讲述微前端搭建的文档",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssaixin/single-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssaixin/single-web/issues"
+  },
+  "homepage": "https://github.com/ssaixin/single-web#readme",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}

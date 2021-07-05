@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前言 | 微前端文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="shortcut icon" type="image/x-icon" href="/single-web/jyjwebdocs/favicon.ico">
+    <meta name="description" content="微前端文档描述">
+    
+    <link rel="preload" href="/single-web/assets/css/0.styles.2de6e7fd.css" as="style"><link rel="preload" href="/single-web/assets/js/app.25aedf86.js" as="script"><link rel="preload" href="/single-web/assets/js/2.bdf7e3fa.js" as="script"><link rel="preload" href="/single-web/assets/js/11.29bea47e.js" as="script"><link rel="prefetch" href="/single-web/assets/js/10.72472155.js"><link rel="prefetch" href="/single-web/assets/js/12.b6713d04.js"><link rel="prefetch" href="/single-web/assets/js/3.2def807a.js"><link rel="prefetch" href="/single-web/assets/js/4.ba3164ba.js"><link rel="prefetch" href="/single-web/assets/js/5.75a3592b.js"><link rel="prefetch" href="/single-web/assets/js/6.0377ba0c.js"><link rel="prefetch" href="/single-web/assets/js/7.6aae7ebf.js"><link rel="prefetch" href="/single-web/assets/js/8.f7cfc9af.js"><link rel="prefetch" href="/single-web/assets/js/9.61fec93e.js">
+    <link rel="stylesheet" href="/single-web/assets/css/0.styles.2de6e7fd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/single-web/" class="home-link router-link-active"><!----> <span class="site-name">微前端文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/single-web/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="推荐" class="dropdown-title"><span class="title">推荐</span> <span class="arrow down"></span></button> <button type="button" aria-label="推荐" class="mobile-dropdown-title"><span class="title">推荐</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          插件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://github.com/systemjs/systemjs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  SystemJs
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://single-spa.js.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  single-spa
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://qiankun.umijs.org/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  qiankun
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/single-web/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="推荐" class="dropdown-title"><span class="title">推荐</span> <span class="arrow down"></span></button> <button type="button" aria-label="推荐" class="mobile-dropdown-title"><span class="title">推荐</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          插件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://github.com/systemjs/systemjs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  SystemJs
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://single-spa.js.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  single-spa
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://qiankun.umijs.org/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  qiankun
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>关于微前端</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>关于single-spa</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/single-web/guide/notes/two.html" aria-current="page" class="active sidebar-link">前言</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#新建一个项目文件夹" class="sidebar-link">新建一个项目文件夹</a></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#新建子应用program1" class="sidebar-link">新建子应用program1</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#配置子应用" class="sidebar-link">配置子应用</a></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#安装single-spa-vue" class="sidebar-link">安装single-spa-vue</a></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#改造入口文件" class="sidebar-link">改造入口文件</a></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#更改视图文件" class="sidebar-link">更改视图文件</a></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#环境配置文件" class="sidebar-link">环境配置文件</a></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#修改路由文件" class="sidebar-link">修改路由文件</a></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#修改package-json中的script" class="sidebar-link">修改package.json中的script</a></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#启动子应用program1" class="sidebar-link">启动子应用program1</a></li></ul></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#创建子应用program2" class="sidebar-link">创建子应用program2</a></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#新建主应用" class="sidebar-link">新建主应用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#安装single-spa" class="sidebar-link">安装single-spa</a></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#入口文件" class="sidebar-link">入口文件</a></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#app-vue" class="sidebar-link">App.vue</a></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#路由" class="sidebar-link">路由</a></li></ul></li><li class="sidebar-sub-header"><a href="/single-web/guide/notes/two.html#启动主应用" class="sidebar-link">启动主应用</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>single-spa-vue源码解析</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h1> <p>这里主要通过以下两种插件来实现微前端初步测试的：</p> <p>1、 <a target="“_blank”" href="https://github.com/systemjs/systemjs">SystemJs</a></p> <p>首先是我们的SystemJS，它提供通用的模块导入途径，支持传统模块和ES6的模块。 SystemJs有两个版本，6.x版本是在浏览器中使用的，0.21版本的是在浏览器和node环境中使用的，两者的使用方式不同。在微服务中主要充当加载器的角色。</p> <p>2、 <a target="“_blank”" href="https://single-spa.js.org/docs/getting-started-overview.html">single-spa</a></p> <p>single-spa是一个在前端应用程序中将多个javascript应用集合在一起的框架。主要充当包装器的角色。</p> <h1 id="single-spa简单介绍"><a href="#single-spa简单介绍" class="header-anchor">#</a> single-spa简单介绍</h1> <p>在微前端介绍部分就已经提过了<code>single-spa</code>，在这里就简单的引用一下最好理解的一个说法：</p> <p>在娘胎里，熊大、熊二、熊三...熊n 都是熊妈妈的宝宝。做b超时都能看到各个熊宝宝的表现和各自的行为，但是总体上，它们都在熊妈妈的肚子里。</p> <p>而熊妈妈就属于这个single-spa包装后的平台， 而每个熊宝宝都是独立的，有各自的行为状态</p> <h1 id="single-spa的简单原理"><a href="#single-spa的简单原理" class="header-anchor">#</a> single-spa的简单原理</h1> <p>实现一套微前端架构，可以把其分成四部分（参考：<a target="“_blank”" href="https://alili.tech/archive/11052bf4/">https://alili.tech/archive/11052bf4/</a>）</p> <p>加载器：也就是微前端架构的核心，主要用来调度子应用，决定何时展示哪个子应用， 可以把它理解成电源。</p> <p>包装器：有了加载器，可以把现有的应用包装，使得加载器可以使用它们，它相当于电源适配器。</p> <p>主应用：一般是包含所有子应用公共部分的项目—— 它相当于电器底座</p> <p>子应用：众多展示在主应用内容区的应用—— 它相当于你要使用的电器</p> <p>所以是这么个概念：电源(加载器)→电源适配器(包装器)→️电器底座(主应用)→️电器(子应用)️</p> <p>总的来说是这样一个流程：用户访问<code>index.html</code>后，浏览器运行加载器的<code>js</code>文件，加载器去配置文件，然后注册配置文件中配置的各个子应用后，首先加载主应用(菜单等)，再通过路由判定，动态远程加载子应用。</p> <p>通俗一点就是子项目中的<code>link/script</code>标签和<code>&lt;div id=&quot;app&quot;&gt;&lt;/div&gt;</code>插入到主项目，而这个操作的核心就是动态加载js和css。</p> <p>动态加载js我们使用的是<code>system.js</code>（SystemJS 是一个通用的模块加载器，它能在浏览器或者 <code>NodeJS</code> 上动态加载模块，并且支持 <code>CommonJS</code>、<code>AMD</code>、<code>全局模块对象</code>和 <code>ES6</code> 模块。通过使用插件，它不仅可以加载 <code>JavaScript</code>，还可以加载 <code>CoffeeScript</code>和 <code>TypeScript</code>。）,借助这个插件，我们只需要将子项目的<code>app.js</code>暴露给它即可。</p> <h1 id="single-spa实现步骤"><a href="#single-spa实现步骤" class="header-anchor">#</a> single-spa实现步骤</h1> <p>要实现的效果就是子项目独立开发部署，顺便还能被主项目集成。</p> <p>（这里对vue熟一点，demo代码都是通过vue来编写的，当然也可以采用其它的，比如react或者原生JS等）</p> <h2 id="新建一个项目文件夹"><a href="#新建一个项目文件夹" class="header-anchor">#</a> 新建一个项目文件夹</h2> <p><code>mkdir single-demo-vue</code></p> <p><code>cd single-demo-vue</code></p> <p>接下来的所有代码都会在该目录中完成。</p> <h2 id="新建子应用program1"><a href="#新建子应用program1" class="header-anchor">#</a> 新建子应用program1</h2> <p><code>vue create program1</code></p> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>以下所有的操作都在项目根目录/single-demo-vue/program1下完成</p></div> <h3 id="配置子应用"><a href="#配置子应用" class="header-anchor">#</a> 配置子应用</h3> <p>在项目根目录下新建vue.config.js文件</p> <div class="language-html extra-class"><pre class="language-html"><code>const package = require('./package.json')
+module.exports = {
+  // 告诉子应用在这个地址加载静态资源，否则会去基座应用的域名下加载
+  publicPath: '//localhost:8081',
+  // 开发服务器
+  devServer: {
+    port: 8081
+  },
+  configureWebpack: {
+    // 导出umd格式的包，在全局对象上挂载属性package.name，基座应用需要通过这个全局对象获取一些信息，比如子应用导出的生命周期函数
+    output: {
+      // library的值在所有子应用中需要唯一
+      library: package.name,
+      libraryTarget: 'umd'
+    }
+  }
+}
+</code></pre></div><h3 id="安装single-spa-vue"><a href="#安装single-spa-vue" class="header-anchor">#</a> 安装single-spa-vue</h3> <p><code>npm i single-spa-vue -S</code></p> <p>single-spa-vue负责为vue应用生成通用的生命周期钩子，在子应用注册到single-spa的主应用时需要用到</p> <h3 id="改造入口文件"><a href="#改造入口文件" class="header-anchor">#</a> 改造入口文件</h3> <div class="language-html extra-class"><pre class="language-html"><code>// /src/main.js
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import singleSpaVue from 'single-spa-vue'
+ 
+Vue.config.productionTip = false
+ 
+const appOptions = {
+  el: '#microApp',
+  router,
+  render: h =&gt; h(App)
+}
+ 
+// 支持应用独立运行、部署，不依赖于基座应用
+if (!window.singleSpaNavigate) {
+  delete appOptions.el
+  new Vue(appOptions).$mount('#app')
+}
+ 
+// 基于基座应用，导出生命周期函数
+const vueLifecycle = singleSpaVue({
+  Vue,
+  appOptions
+})
+ 
+export function bootstrap (props) {
+  console.log('program1 bootstrap')
+  return vueLifecycle.bootstrap(() =&gt; {})
+}
+ 
+export function mount (props) {
+  console.log('program1 mount')
+  return vueLifecycle.mount(() =&gt; {})
+}
+ 
+export function unmount (props) {
+  console.log('program1 unmount')
+  return vueLifecycle.unmount(() =&gt; {})
+}
+</code></pre></div><h3 id="更改视图文件"><a href="#更改视图文件" class="header-anchor">#</a> 更改视图文件</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- /views/Home.vue --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>home<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>program1 home page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- /views/About.vue --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>about<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>program1 about page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="环境配置文件"><a href="#环境配置文件" class="header-anchor">#</a> 环境配置文件</h3> <p><code>.env</code>
+应用独立运行时的开发环境配置</p> <div class="language-html extra-class"><pre class="language-html"><code>NODE_ENV=development
+VUE_APP_BASE_URL=/
+</code></pre></div><p><code>.env.micro</code>
+作为子应用运行时的开发环境配置</p> <div class="language-html extra-class"><pre class="language-html"><code>NODE_ENV=development
+VUE_APP_BASE_URL=/program1
+</code></pre></div><p><code>.env.buildMicro</code>
+作为子应用构建生产环境bundle时的环境配置，但这里的NODE_ENV为development，而不是production，是为了方便，这个方便其实single-spa带来的弊端（js entry的弊端）</p> <div class="language-html extra-class"><pre class="language-html"><code>NODE_ENV=development
+VUE_APP_BASE_URL=/program1
+</code></pre></div><h3 id="修改路由文件"><a href="#修改路由文件" class="header-anchor">#</a> 修改路由文件</h3> <div class="language-html extra-class"><pre class="language-html"><code>
+// /src/router/index.js
+// ...
+const router = new VueRouter({
+  mode: 'history',
+  // 通过环境变量来配置路由的 base url
+  base: process.env.VUE_APP_BASE_URL,
+  routes
+})
+// ...
+</code></pre></div><h3 id="修改package-json中的script"><a href="#修改package-json中的script" class="header-anchor">#</a> 修改package.json中的script</h3> <div class="language-html extra-class"><pre class="language-html"><code>{
+  &quot;name&quot;: &quot;program1&quot;,
+  // ...
+  &quot;scripts&quot;: {
+    // 独立运行
+    &quot;serve&quot;: &quot;vue-cli-service serve&quot;,
+    // 作为子应用运行
+    &quot;serve:micro&quot;: &quot;vue-cli-service serve --mode micro&quot;,
+    // 构建子应用
+    &quot;build&quot;: &quot;vue-cli-service build --mode buildMicro&quot;
+  },
+    // ...
+}
+</code></pre></div><h3 id="启动子应用program1"><a href="#启动子应用program1" class="header-anchor">#</a> 启动子应用program1</h3> <p>program1独立运行</p> <p><code>npm run serve</code></p> <p>作为子应用运行（会在pathname的开头加了/program1前缀）</p> <p><code>npm run serve:micro</code></p> <p>作为独立应用访问</p> <p><img src="/images/pic03.png" alt=""></p> <h2 id="创建子应用program2"><a href="#创建子应用program2" class="header-anchor">#</a> 创建子应用program2</h2> <p>在/single-demo-vue目录下新建子应用program2，步骤同program1，只需把过程中出现的'program1'字样改成'program2'即可，vue.config.js中的8081改成8082`</p> <p>启动应用program2，作为独立应用访问</p> <p><img src="/images/pic04.png" alt=""></p> <h2 id="新建主应用"><a href="#新建主应用" class="header-anchor">#</a> 新建主应用</h2> <p>创建一个主应用root-html-file，这个主应用只需要简单的起一个服务访问静态资源即可。</p> <p><code>vue create root-html-file</code></p> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>以下所有的操作都在项目根目录/single-spa-vue/root-html-file下完成</p></div> <h3 id="安装single-spa"><a href="#安装single-spa" class="header-anchor">#</a> 安装single-spa</h3> <p><code>npm i single-spa -S</code></p> <h3 id="入口文件"><a href="#入口文件" class="header-anchor">#</a> 入口文件</h3> <div class="language-html extra-class"><pre class="language-html"><code>// src/main.js
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import { registerApplication, start } from 'single-spa'
+ 
+Vue.config.productionTip = false
+ 
+// 远程加载子应用
+function createScript(url) {
+  return new Promise((resolve, reject) =&gt; {
+    const script = document.createElement('script')
+    script.src = url
+    script.onload = resolve
+    script.onerror = reject
+    const firstScript = document.getElementsByTagName('script')[0]
+    firstScript.parentNode.insertBefore(script, firstScript)
+  })
+}
+ 
+// 记载函数，返回一个 promise
+function loadApp(url, globalVar) {
+  // 支持远程加载子应用
+  return async () =&gt; {
+    await createScript(url + '/js/chunk-vendors.js')
+    await createScript(url + '/js/app.js')
+    // 这里的return很重要，需要从这个全局对象中拿到子应用暴露出来的生命周期函数
+    return window[globalVar]
+  }
+}
+ 
+// 子应用列表
+const apps = [
+  {
+    // 子应用名称
+    name: 'program1',
+    // 子应用加载函数，是一个promise
+    app: loadApp('http://localhost:8081', 'program1'),
+    // 当路由满足条件时（返回true），激活（挂载）子应用
+    activeWhen: location =&gt; location.pathname.startsWith('/program1'),
+    // 传递给子应用的对象
+    customProps: {}
+  },
+  {
+    name: 'program2',
+    app: loadApp('http://localhost:8082', 'program2'),
+    activeWhen: location =&gt; location.pathname.startsWith('/program2'),
+    customProps: {}
+  },
+]
+ 
+// 注册子应用
+for (let i = apps.length - 1; i &gt;= 0; i--) {
+  registerApplication(apps[i])
+}
+ 
+new Vue({
+  router,
+  mounted() {
+    // 启动
+    start()
+  },
+  render: h =&gt; h(App)
+}).$mount('#app')
+</code></pre></div><h3 id="app-vue"><a href="#app-vue" class="header-anchor">#</a> App.vue</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nav<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-link</span> <span class="token attr-name">to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/program1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>program1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-link</span><span class="token punctuation">&gt;</span></span> |
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-link</span> <span class="token attr-name">to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/program2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>program2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-link</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 子应用容器 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">&quot;</span>microApp<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-view</span><span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+ 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+<span class="token selector">#app</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> Avenir<span class="token punctuation">,</span> Helvetica<span class="token punctuation">,</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+  <span class="token property">-webkit-font-smoothing</span><span class="token punctuation">:</span> antialiased<span class="token punctuation">;</span>
+  <span class="token property">-moz-osx-font-smoothing</span><span class="token punctuation">:</span> grayscale<span class="token punctuation">;</span>
+  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #2c3e50<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token selector">#nav</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token selector">#nav a</span> <span class="token punctuation">{</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #2c3e50<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token selector">#nav a.router-link-exact-active</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #42b983<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="路由"><a href="#路由" class="header-anchor">#</a> 路由</h3> <div class="language-html extra-class"><pre class="language-html"><code>import Vue from 'vue'
+import VueRouter from 'vue-router'
+ 
+Vue.use(VueRouter)
+ 
+const routes = []
+ 
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes
+})
+ 
+export default router
+</code></pre></div><h2 id="启动主应用"><a href="#启动主应用" class="header-anchor">#</a> 启动主应用</h2> <p><code>npm run serve</code></p> <p><img src="/images/pic06.png" alt=""> <img src="/images/pic05.png" alt=""></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/single-web/guide/notes/one.html" class="prev">
+        微前端
+      </a></span> <span class="next"><a href="/single-web/guide/notes/three.html">
+        single-spa-vue 源码分析
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/single-web/assets/js/app.25aedf86.js" defer></script><script src="/single-web/assets/js/2.bdf7e3fa.js" defer></script><script src="/single-web/assets/js/11.29bea47e.js" defer></script>
+  </body>
+</html>
